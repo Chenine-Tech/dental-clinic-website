@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book an Appointment</h1>
+    </header>
+
+    <section>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required><br>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required><br>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="cleaning">Teeth Cleaning</option>
+                <option value="filling">Cavity Filling</option>
+                <option value="root-canal">Root Canal Treatment</option>
+                <option value="whitening">Teeth Whitening</option>
+            </select><br>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>New here? <a href="register.html">Register as a patient</a> first.</p>
+    </footer>
+</body>
+</html>
